@@ -4,11 +4,14 @@
     Вывести в консоль с помощью цикла  WHILE, все нечетные числа от 30 до 40
 
 */
-var numb = 30;
+let numb = 30;
 while (numb < 40){
-  numb++;
-  if(numb%2) console.log(numb);
+  if(numb % 2 !==0) {
+      console.log(numb);
+      numb++;
 }
+}
+console.log('task2');
 
 
 /*
@@ -18,11 +21,12 @@ while (numb < 40){
     Первым четным числом должно быть 70. 
     
 */
-for (let i = 70; i <= 40; i++) {
-    if (i % 2 == 0) {
-      alert( i );
+for (let i = 70; i >= 40; i--) {
+    if (i % 2 === 0) {
+      console.log(i);
     }
   }
+console.log('task3');
 /*
     TASK 3
 
@@ -30,12 +34,13 @@ for (let i = 70; i <= 40; i++) {
     
 */
 let b = 70;
-while (b <= 40) { 
-    if (b % 2 == 0) {
-  alert( b );
+while (b >= 40) { 
+    if (b % 2 === 0) {
+  console.log(b);
   b++;
     }
 }
+console.log('task4')
 
 /*
     TASK 4
@@ -44,11 +49,11 @@ while (b <= 40) {
     найдите сумму чисел от 1 до 100, и выведите результат в консоль.   
     
 */
-var sum = 0;
+let sum = 0;
      for (var s = 0; s <= 100; s++) {
          sum += s;
       }
-     alert(sum); //5050
+     console.log(sum); //5050
 
 /*
     TASK 5
@@ -58,9 +63,9 @@ var sum = 0;
     На последней должно быть 10 смайликов.   
     
 */
-var linesNum=10;
-var line= ':)';
-var subpower=1;
+let linesNum=10;
+let line= ':)';
+let subpower=1;
 while (subpower<=linesNum) {line+=':)';document.write(line+ ':)' );subpower++;}
 
 /*
