@@ -78,10 +78,13 @@ while (subpower<=linesNum) {line+=':)';document.write(line+ ':)' );subpower++;}
     
 */
       for(c = 1; c <= 50; c++){
-         if (c % 3 == 0 && c % 5 == 0 ? "JavaScript" : c % 3 == 0 ? "Java" : c % 5 == 0 ? "Script" : c) {
-            console.log(c); 
-         }
-      }
+         if (c % 3 == 0 && c % 5 == 0 {"JavaScript"}
+         
+         } else if (c % 3 == 0) {"Java"} 
+          else (c % 5 == 0 ) {"Script"}
+        } 
+        console.log(c); 
+        };
 
 /* 
     TASK 7
@@ -105,7 +108,8 @@ for (let n = 1000, num = 0; n > 50; num++)
 
 let i = 45;
 while (i++ <170 ) {
-    i % 10 || document.write(`${i}<br>`);
-};
+    i % 10;
+    console.log(i);
+}
 
 
