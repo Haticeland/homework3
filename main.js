@@ -32,9 +32,9 @@ console.log('task3');
 let b = 70;
 while (b >= 40) { 
     if (b % 2 === 0) {
-  console.log(b);
+        console.log(b);
     }
-    b--;
+        b--;
 }
 console.log('task4');
 
@@ -45,10 +45,10 @@ console.log('task4');
     
 */
 let sum = 0;
-     for (var s = 0; s <= 100; s++) {
+for (let s = 0; s <= 100; s++) {
          sum += s;
       }
-     console.log(sum); //5050
+console.log(sum); //5050
 
 /*
     TASK 5
@@ -60,7 +60,8 @@ let sum = 0;
 let linesNum=10;
 let line= ':)';
 let subPower=1;
-while (subPower<= linesNum) {line+=':)';
+while (subPower<= linesNum) {
+    line+=':)';
     {console.log(line);}
 ++subPower;
 };
@@ -75,12 +76,14 @@ console.log('task5');//я не добилась, чтоб все выводил�
     
     
 */
-    for(c = 1; c <= 50; c++){
-         if (c % 3 == 0 && c % 5 == 0) {"JavaScript"
+for(let c = 1; c <= 50; c++){
+         if (c % 3 === 0 && c % 5 === 0) {
+             console.log("JavaScript")
          
-         } else if (c % 3 == 0) {"Java" 
-         
-        } else if (c % 5 == 0 ) {"Script"}
+         } else if (c % 3 === 0) {
+             console.log("Java")
+         } else if (c % 5 === 0 ) {
+            console.log("Script")}
         console.log(c);
     };
     console.log('task6');
@@ -104,8 +107,8 @@ for (let n = 1000, num = 0; n > 50; num++) {
 */
 
 let i = 45;
-while (i++ <170 ) {
-    i % 10;
+while (i<170 ) {
+    if (i % 10 === 0) {
     console.log(i);
 };
 console.log('task8');
