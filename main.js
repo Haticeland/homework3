@@ -1,22 +1,19 @@
-/*
+*
     TASK 1
-
     Вывести в консоль с помощью цикла  WHILE, все нечетные числа от 30 до 40
-
 */
 let numb = 30;
-while (numb < 40){
-  if(numb % 2 !==0) {
+while (numb < 40){ 
+    if(numb % 2 !==0) { 
       console.log(numb);
-      numb++;
-}
+    }  
+    numb++;
 }
 console.log('task2');
 
 
 /*
     TASK 2
-
     Вывести в консоль с помощью цикла FOR, все четные числа от 70 до 40.
     Первым четным числом должно быть 70. 
     
@@ -29,7 +26,6 @@ for (let i = 70; i >= 40; i--) {
 console.log('task3');
 /*
     TASK 3
-
     Переведите цикл FOR из задания 2, в цикл WHILE.  
     
 */
@@ -37,14 +33,13 @@ let b = 70;
 while (b >= 40) { 
     if (b % 2 === 0) {
   console.log(b);
-  b++;
     }
+    b--;
 }
-console.log('task4')
+console.log('task4');
 
 /*
     TASK 4
-
     С помощью любого известного Вам цикла из JavaScript, 
     найдите сумму чисел от 1 до 100, и выведите результат в консоль.   
     
@@ -57,7 +52,6 @@ let sum = 0;
 
 /*
     TASK 5
-
     Вывести 10 строчек со смайликом : ':)'. 
     На первой строчке один смайлик, на второй два,и так далее. 
     На последней должно быть 10 смайликов.   
@@ -65,26 +59,31 @@ let sum = 0;
 */
 let linesNum=10;
 let line= ':)';
-let subpower=1;
-while (subpower<=linesNum) {line+=':)';document.write(line+ ':)' );subpower++;}
+let subPower=1;
+while (subPower<= linesNum) {line+=':)';
+    {console.log(line);}
+++subPower;
+};
+console.log('task5');//я не добилась, чтоб все выводилось как надо...блин
 
 /*
     TASK 6
-
     Напишите программу, которая выводит на экран числа от 1 до 50. 
     При этом вместо чисел, кратных трем, программа должна выводить слово «Java»,
     а вместо чисел, кратных пяти — слово «Script». 
     Если число кратно и 3, и 5, то программа должна выводить слово «JavaScript»   
     
+    
 */
-      for(c = 1; c <= 50; c++){
-         if (c % 3 == 0 && c % 5 == 0 {"JavaScript"}
+    for(c = 1; c <= 50; c++){
+         if (c % 3 == 0 && c % 5 == 0) {"JavaScript"
          
-         } else if (c % 3 == 0) {"Java"} 
-          else (c % 5 == 0 ) {"Script"}
-        } 
-        console.log(c); 
-        };
+         } else if (c % 3 == 0) {"Java" 
+         
+        } else if (c % 5 == 0 ) {"Script"}
+        console.log(c);
+    };
+    console.log('task6');
 
 /* 
     TASK 7
@@ -92,24 +91,21 @@ while (subpower<=linesNum) {line+=':)';document.write(line+ ':)' );subpower++;}
     Делите его на 2 столько раз, пока результат деления не станет меньше 50.
     Посчитайте количество итераций необходимых для выхода из цикла 
     и выведите результат в консоль
-
 */
-for (let n = 1000, num = 0; n > 50; num++) 
-        {
+for (let n = 1000, num = 0; n > 50; num++) {
         n /= 2;
         console.log(n);
-        }
+    };
+    console.log('task7');
 /*
     TASK 8
     Напишите программу, которая используя цикл while 
     выведет все числа от 45 до 170, кратные 10.
-
 */
 
 let i = 45;
 while (i++ <170 ) {
     i % 10;
     console.log(i);
-}
-
-
+};
+console.log('task8');
