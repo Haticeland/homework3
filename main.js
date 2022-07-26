@@ -107,7 +107,7 @@ for (let n = 1000, num = 0; n > 50; num++) {
 */
 
 let i = 45;
-while (i<170 ) {
+while (i < 170 ) {
     if (i % 10 === 0) {
     console.log(i);
 };
